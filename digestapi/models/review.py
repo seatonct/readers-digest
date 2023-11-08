@@ -7,6 +7,6 @@ class Review(models.Model):
         "Book", on_delete=models.CASCADE, related_name='reviews')
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='reviews')
-    rating = models.IntegerField(max_length=2)
+    rating = models.IntegerField()
     comment = models.CharField(max_length=1000)
     date_posted = models.DateTimeField
