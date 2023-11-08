@@ -1,0 +1,100 @@
+[
+  {
+    "model": "digestapi.category",
+    "pk": 1,
+    "fields": {
+      "label": "Fantasy"
+    }
+  },
+  {
+    "model": "digestapi.category",
+    "pk": 2,
+    "fields": {
+      "label": "Adventure"
+    }
+  },
+  {
+    "model": "digestapi.category",
+    "pk": 3,
+    "fields": {
+      "label": "Science Fiction"
+    }
+  },
+  {
+    "model": "digestapi.category",
+    "pk": 4,
+    "fields": {
+      "label": "Horror"
+    }
+  },
+  {
+    "model": "digestapi.category",
+    "pk": 5,
+    "fields": {
+      "label": "Romance"
+    }
+  },
+  {
+    "model": "digestapi.category",
+    "pk": 6,
+    "fields": {
+      "label": "Historical Fiction"
+    }
+  },
+  {
+    "model": "digestapi.category",
+    "pk": 7,
+    "fields": {
+      "label": "Young Adult"
+    }
+  },
+  {
+    "model": "digestapi.category",
+    "pk": 8,
+    "fields": {
+      "label": "Children's"
+    }
+  },
+  {
+    "model": "digestapi.category",
+    "pk": 9,
+    "fields": {
+      "label": "Fiction"
+    }
+  },
+  {
+    "model": "digestapi.category",
+    "pk": 10,
+    "fields": {
+      "label": "Non-Fiction"
+    }
+  },
+  {
+    "model": "digestapi.category",
+    "pk": 11,
+    "fields": {
+      "label": "Biography"
+    }
+  },
+  {
+    "model": "digestapi.category",
+    "pk": 12,
+    "fields": {
+      "label": "History"
+    }
+  },
+  {
+    "model": "digestapi.category",
+    "pk": 13,
+    "fields": {
+      "label": "Cookbook"
+    }
+  },
+  {
+    "model": "digestapi.category",
+    "pk": 14,
+    "fields": {
+      "label": "Science"
+    }
+  }
+]
