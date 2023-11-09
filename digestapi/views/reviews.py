@@ -38,7 +38,6 @@ class ReviewViewSet(viewsets.ViewSet):
         review.book = request.data['book']
         review.rating = request.data.get['rating']
         review.comment = request.data.get['comment']
-        review.date_posted = request.data['reviewDate']
         review.save()
 
         try:
