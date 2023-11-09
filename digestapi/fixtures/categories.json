@@ -3,98 +3,98 @@
     "model": "digestapi.category",
     "pk": 1,
     "fields": {
-      "label": "Fantasy"
+      "name": "Fantasy"
     }
   },
   {
     "model": "digestapi.category",
     "pk": 2,
     "fields": {
-      "label": "Adventure"
+      "name": "Adventure"
     }
   },
   {
     "model": "digestapi.category",
     "pk": 3,
     "fields": {
-      "label": "Science Fiction"
+      "name": "Science Fiction"
     }
   },
   {
     "model": "digestapi.category",
     "pk": 4,
     "fields": {
-      "label": "Horror"
+      "name": "Horror"
     }
   },
   {
     "model": "digestapi.category",
     "pk": 5,
     "fields": {
-      "label": "Romance"
+      "name": "Romance"
     }
   },
   {
     "model": "digestapi.category",
     "pk": 6,
     "fields": {
-      "label": "Historical Fiction"
+      "name": "Historical Fiction"
     }
   },
   {
     "model": "digestapi.category",
     "pk": 7,
     "fields": {
-      "label": "Young Adult"
+      "name": "Young Adult"
     }
   },
   {
     "model": "digestapi.category",
     "pk": 8,
     "fields": {
-      "label": "Children's"
+      "name": "Children's"
     }
   },
   {
     "model": "digestapi.category",
     "pk": 9,
     "fields": {
-      "label": "Fiction"
+      "name": "Fiction"
     }
   },
   {
     "model": "digestapi.category",
     "pk": 10,
     "fields": {
-      "label": "Non-Fiction"
+      "name": "Non-Fiction"
     }
   },
   {
     "model": "digestapi.category",
     "pk": 11,
     "fields": {
-      "label": "Biography"
+      "name": "Biography"
     }
   },
   {
     "model": "digestapi.category",
     "pk": 12,
     "fields": {
-      "label": "History"
+      "name": "History"
     }
   },
   {
     "model": "digestapi.category",
     "pk": 13,
     "fields": {
-      "label": "Cookbook"
+      "name": "Cookbook"
     }
   },
   {
     "model": "digestapi.category",
     "pk": 14,
     "fields": {
-      "label": "Science"
+      "name": "Science"
     }
   }
 ]

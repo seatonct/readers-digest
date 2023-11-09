@@ -1,0 +1,24 @@
+[
+  {
+    "model": "digestapi.review",
+    "pk": 1,
+    "fields": {
+      "user_id": 1,
+      "book_id": 1,
+      "rating": 8,
+      "comment": "Pretty good book",
+      "date_posted": "202311062132"
+    }
+  },
+  {
+    "model": "digestapi.review",
+    "pk": 2,
+    "fields": {
+      "user_id": 1,
+      "book_id": 2,
+      "rating": 5,
+      "comment": "It was okay, I guess",
+      "date_posted": "202311080854"
+    }
+  }
+]

@@ -16,7 +16,7 @@ class BookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
         fields = ['id', 'title', 'author', 'isbn_number',
-                  'cover_image', 'is_owner', 'categories']
+                  'cover_img', 'is_owner', 'categories']
 
 
 class BookViewSet(viewsets.ViewSet):
