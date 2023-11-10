@@ -7,7 +7,7 @@
       "book_id": 1,
       "rating": 8,
       "comment": "Pretty good book",
-      "date_posted": "202311062132"
+      "date_posted": "2023-11-08"
     }
   },
   {
@@ -18,7 +18,7 @@
       "book_id": 2,
       "rating": 5,
       "comment": "It was okay, I guess",
-      "date_posted": "202311080854"
+      "date_posted": "2023-11-10"
     }
   }
 ]
