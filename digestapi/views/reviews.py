@@ -1,6 +1,6 @@
 from rest_framework import viewsets, status, serializers, permissions
 from rest_framework.response import Response
-from digestapi.models import Review
+from digestapi.models import Review, Book
 
 
 class ReviewSerializer(serializers.ModelSerializer):
@@ -31,21 +31,23 @@ class ReviewViewSet(viewsets.ViewSet):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def create(self, request):
+        book_reviewed = Book.objects.get(pk=request.data['bookId'])
         # Create a new instance of a review and assign property
         # values from the request payload using `request.data`
         review = Review()
         review.user = request.user
-        review.book = request.data['book']
-        review.rating = request.data.get['rating']
-        review.comment = request.data.get['comment']
+        review.book = book_reviewed
+        review.rating = request.data['rating']
+        review.comment = request.data['comment']
         review.save()
 
         try:
             # Serialize the objects, and pass request as context
-            serialized = ReviewSerializer(review, many=False)
+            serialized = ReviewSerializer(
+                review, many=False, context={'request': request})
             # Return the serialized data with 201 status code
             return Response(serialized.data, status=status.HTTP_201_CREATED)
-        except Exception as ex:
+        except Exception:
             return Response(None, status=status.HTTP_400_BAD_REQUEST)
 
     def retrieve(self, request, pk=None):
