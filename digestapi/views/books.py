@@ -41,7 +41,7 @@ class BookViewSet(viewsets.ViewSet):
         title = request.data.get('title')
         author = request.data.get('author')
         isbn_number = request.data.get('isbn_number')
-        cover_image = request.data.get('cover_image')
+        cover_img = request.data.get('cover_img')
 
         # Create a book database row first, so you have a
         # primary key to work with
@@ -49,7 +49,7 @@ class BookViewSet(viewsets.ViewSet):
             user=request.user,
             title=title,
             author=author,
-            cover_image=cover_image,
+            cover_img=cover_img,
             isbn_number=isbn_number)
 
         # Establish the many-to-many relationships
@@ -72,7 +72,7 @@ class BookViewSet(viewsets.ViewSet):
                 book.title = serializer.validated_data['title']
                 book.author = serializer.validated_data['author']
                 book.isbn_number = serializer.validated_data['isbn_number']
-                book.cover_image = serializer.validated_data['cover_image']
+                book.cover_img = serializer.validated_data['cover_img']
                 book.save()
 
                 category_ids = request.data.get('categories', [])

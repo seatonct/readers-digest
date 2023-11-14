@@ -11,7 +11,7 @@ from django.contrib.auth import authenticate
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'username', 'password']
+        fields = ['id', 'email', 'password']
         extra_kwargs = {'password': {'write_only': True}}
 
 
@@ -24,7 +24,7 @@ class UserViewSet(viewsets.ViewSet):
         serializer = UserSerializer(data=request.data)
         if serializer.is_valid():
             user = User.objects.create_user(
-                username=serializer.validated_data['username'],
+                username=serializer.validated_data['email'],
                 password=serializer.validated_data['password']
             )
             token, created = Token.objects.get_or_create(user=user)
@@ -33,7 +33,7 @@ class UserViewSet(viewsets.ViewSet):
 
     @action(detail=False, methods=['post'], url_path='login')
     def user_login(self, request):
-        username = request.data.get('username')
+        username = request.data.get('email')
         password = request.data.get('password')
 
         user = authenticate(username=username, password=password)
